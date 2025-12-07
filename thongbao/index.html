@@ -73,7 +73,25 @@
 
   <!-- Nội dung chính -->
   <div class="content">
-  <h1>Thời gian hiện tại: <span id-"ngaygio"></span></h1>
+  <h1>Thời gian hiện tại: <span id-"time"></span></h1>
+    <script>
+function updateTime() {
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const year = now.getFullYear();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    document.getElementById('time').textContent = 
+        ${day}/${month}/${year} ${hours}:${minutes}:${seconds};
+}
+
+// Cập nhật mỗi giây
+setInterval(updateTime, 1000);
+updateTime();
+</script>
   <p> Hiện chưa có thông báo</p>
   </div>
 </body>
