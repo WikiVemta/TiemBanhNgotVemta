@@ -63,7 +63,7 @@
   <!-- Menu cố định -->
   <div class="menu">
     <a href="#trangchinh">Trang chính</a>
-    <a href="rules.html">Rules</a>
+    <a href="rules">Rules</a>
     <a href="thongbao.html">Thông báo</a>
     <a href="sukien.html">Sự kiện</a>
     <a href="bot.html">Bot</a>
