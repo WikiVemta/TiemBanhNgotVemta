@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Wiki Vemta Server</title>
+  <!-- Favicon -->
+  <link rel="icon" href="https://github.com/WikiVemta/TiemBanhNgotVemta/raw/main/favicon-32x32.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url(https://i.pinimg.com/originals/1c/2d/3d/1c2d3da0aedd5529bdc950b37770f428.gif) no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    /* Menu cố định màu chắc */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 2px solid white;
+      padding: 15px;
+      text-align: center;
+      background: #1a1a1a;
+      z-index: 1000;
+    }
+    .menu a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: 0.2s;
+    }
+    .menu a:hover {
+      background: #333;
+    }
+    .content {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      margin: 0 10%;
+      border-radius: 8px;
+      padding-top: 80px; /* tránh menu che nội dung */
+    }
+    .discord-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #5865F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .discord-btn:hover {
+      background: #4752C4;
+    }
+    ul li {margin-bottom: 5px;}
+  </style>
+</head>
+<body>
+  <!-- Menu cố định -->
+  <div class="menu">
+    <a href="index.html">Trang chính</a>
+    <a href="rules/">Rules</a>
+    <a href="thongbao/">Thông báo</a>
+    <a href="sukien.html">Sự kiện</a>
+    <a href="bot.html">Bot</a>
+    <a href="role.html">Role</a>
+    <a href="https://discord.gg/fhWS6wG85b">Discord</a>
+  </div>
+
+  <!-- Nội dung chính -->
+  <h1>Thời gian hiện tại: <span id-"ngaygio"></span></h1>
+  <p> Hiện chưa có thông báo</p>
+</body>
+</html>
