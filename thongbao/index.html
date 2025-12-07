@@ -75,7 +75,7 @@
   <div class="content">
   <h1>Thời gian hiện tại: <span id="time"></span></h1>
   <p> Hiện chưa có thông báo</p>
- <script>
+<script>
 function updateTime() {
     const now = new Date();
     const day = String(now.getDate()).padStart(2, '0');
@@ -85,14 +85,16 @@ function updateTime() {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
 
+    // Dùng template string với backtick ``
     document.getElementById('time').textContent = 
-        ${day}/${month}/${year} ${hours}:${minutes}:${seconds};
+        `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
 }
 
 // Cập nhật mỗi giây
 setInterval(updateTime, 1000);
 updateTime();
 </script>
+
   </div>
 </body>
 </html>
