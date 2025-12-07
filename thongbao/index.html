@@ -74,7 +74,8 @@
   <!-- Nội dung chính -->
   <div class="content">
   <h1>Thời gian hiện tại: <span id="time"></span></h1>
-    <script>
+  <p> Hiện chưa có thông báo</p>
+ <script>
 function updateTime() {
     const now = new Date();
     const day = String(now.getDate()).padStart(2, '0');
@@ -91,11 +92,6 @@ function updateTime() {
 // Cập nhật mỗi giây
 setInterval(updateTime, 1000);
 updateTime();
-</script>
-  <p> Hiện chưa có thông báo</p>
-    <p>Test: <span id="time"></span></p>
-<script>
-document.getElementById('time').textContent = "Hello đại ca!";
 </script>
   </div>
 </body>
